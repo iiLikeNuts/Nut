@@ -18,6 +18,11 @@ if (bot.user.id === message.author.id) { return }
     message.delete();
   message.author.send(message.author.username + ", please do not be racist!")
 }
+  if (msg.includes("nigger")) {
+
+    message.delete();
+  message.author.send(message.author.username + ", please do not be racist!")
+}
 
 
 });
