@@ -26,4 +26,8 @@ if (bot.user.id === message.author.id) { return }
 
 
 });
+bot.on('disconnect', function(msg, code) {
+    if (code === 0) return console.error(msg);
+    bot.connect();
+});
 bot.login('MzU3ODQ1NTg5Mjg4OTQzNjE2.DJv32w.W6XyTwHt4lYs41iatws9nrojkD0')
